@@ -1,18 +1,14 @@
 
 /**
- * Mr. Hayes
+ * Christine Wang
  * 8/23/22
- * Notes for Ch 1
+ * Notes for Ch. 1
  * Write a description where we are going to take some code notes
- * Who helped me: Mr. Hayes, Mom, Dog, 
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Who helped me: Mr. Hayes, 
  */
+
 import java.util.Scanner;
 import java.util.Random;
-
-
 
 public class chapter1Notes
 {
@@ -22,7 +18,7 @@ public class chapter1Notes
      */
     public static void main(String[] args)
     {
-        
+        va
         Scanner keyboard = new Scanner(System.in);
         
         //these are the basic data types
@@ -37,8 +33,10 @@ public class chapter1Notes
         
         
         //These are objects!
-        String word = new String("Kevin Hayes");
-        Integer number = new Integer(47);
+        
+        // object type   variable name   memory   constructor
+             String      word            = new     String("Kevin Hayes");
+             Integer     number          = new     Integer(47);
         Double number2 = new Double(34.5);
         
         String word1 = new String("Homer Simpson");
@@ -48,12 +46,10 @@ public class chapter1Notes
         String last = "Hayes";
 
 
-
         System.out.printf("Name:  %s \t ID: %5d \n", name); // undeclared variable: id);
         System.out.println( 'a' + 100 );
         System.out.println('a'   );
         System.out.println("A"+100  );
-        
         
         // Calculate: workMiles = work days * one-way-distance * 2
         // Calculate: milesTravelled = ending miles - beginning miles
