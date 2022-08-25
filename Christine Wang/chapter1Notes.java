@@ -18,7 +18,7 @@ public class chapter1Notes
      */
     public static void main(String[] args)
     {
-        va
+        
         Scanner keyboard = new Scanner(System.in);
         
         //these are the basic data types
