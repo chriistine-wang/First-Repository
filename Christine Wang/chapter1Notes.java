@@ -38,13 +38,14 @@ public class chapter1Notes
         DecimalFormat fmt2 = new DecimalFormat("0.00");
         
         NumberFormat money = NumberFormat.getCurrencyInstance(); // calls upon a method, constructor called BTS
-        NumberFormat percent = NumberFormat.getPercentInstance(); // percentage of a whole number (2 = 200%)
+        NumberFormat percent = NumberFormat.getPercentInstance(); // percentage of a whole number (2 = 200%, 23.45 = 2345%)
         
         
         System.out.println (fmt.format(num1));
         System.out.println (fmt2.format(num1));
         
-        System.out.println (fmt.format(num1));
+        System.out.println (money.format(num1));
+        System.out.println (percent.format(num1));
 
         
         
@@ -67,6 +68,9 @@ public class chapter1Notes
         int id = 85027;
         int id2 = 4503;
         int id3 = 60439;
+        
+        // -----------
+        // printf
 
         // "-" aligns it to the left
         // "15" in 15s inputs amount of characters spaced
@@ -74,7 +78,16 @@ public class chapter1Notes
         
         System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f \n", name, id, 4.22395);
         System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f\n", name2, id2, 3.8);
+        
+        // spacing between literals affect printed out spacing.
+        // number before conversion characters starts affecting the spacing after input is outputted
+        // width = min. number of spaces taken up by output
+        System.out.printf("Name:       %-15S \t ID: %1d\n", name, id);
+        System.out.printf("Name:  %-15s \t ID: %5d \t GPA: %-,8.3f\n", name, id, 4.22395);
+        System.out.printf("Name:  %-15s \t ID: %5d \t GPA: %-7.9f\n", name, id, 4.22395); // number after decimal determines amount of spaces taken up. replaces w/ 0's if empty.
+        System.out.printf("Name:  %-15s \t ID: %5d \t GPA: %-1.9f\n", name, id, 4.22395); // but what does the number before decimal do?
 
+        // chars
         
         System.out.println( 'a' + 100 ); // char also = single digit numbers, corresponds to ACII keyboard
         System.out.println('a'   );
