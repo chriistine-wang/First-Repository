@@ -9,6 +9,8 @@
 
 import java.util.Scanner;
 import java.util.Random;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class chapter1Notes
 {
@@ -30,24 +32,51 @@ public class chapter1Notes
         long a = 9;
         short b = 5;
         
+        // change numbers in variable to test difference
+        // the difference between the two: 0's pads it with zeros. #'s does not, only rounds
+        DecimalFormat fmt = new DecimalFormat("0.##");
+        DecimalFormat fmt2 = new DecimalFormat("0.00");
+        
+        NumberFormat money = NumberFormat.getCurrencyInstance(); // calls upon a method, constructor called BTS
+        NumberFormat percent = NumberFormat.getPercentInstance(); // percentage of a whole number (2 = 200%)
+        
+        
+        System.out.println (fmt.format(num1));
+        System.out.println (fmt2.format(num1));
+        
+        System.out.println (fmt.format(num1));
+
+        
         
         
         //These are objects!
         
-        // object type   variable name   memory   constructor
-             String      word            = new     String("Kevin Hayes");
-             Integer     number          = new     Integer(47);
+        //   class      identifier (name)      memory    constructor (how much memory do you need?)
+             String      word                  = new       String("Kevin Hayes");
+             Integer     number                = new       Integer(47);
         Double number2 = new Double(34.5);
         
-        String word1 = new String("Homer Simpson");
         String word2 = new String("Homer Simpson");
         String word3 = new String("Bart Simpson");
         String name = new String("Mike");
+        String name2 = new String("Homer Simpson");
+        String name3 = new String("Bob");
+
         String last = "Hayes";
 
+        int id = 85027;
+        int id2 = 4503;
+        int id3 = 60439;
 
-        System.out.printf("Name:  %s \t ID: %5d \n", name); // undeclared variable: id);
-        System.out.println( 'a' + 100 );
+        // "-" aligns it to the left
+        // "15" in 15s inputs amount of characters spaced
+        // %#d amount of digits in column. can overflow
+        
+        System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f \n", name, id, 4.22395);
+        System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f\n", name2, id2, 3.8);
+
+        
+        System.out.println( 'a' + 100 ); // char also = single digit numbers, corresponds to ACII keyboard
         System.out.println('a'   );
         System.out.println("A"+100  );
         
