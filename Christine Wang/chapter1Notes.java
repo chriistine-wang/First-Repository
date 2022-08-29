@@ -40,12 +40,13 @@ public class chapter1Notes
         NumberFormat money = NumberFormat.getCurrencyInstance(); // calls upon a method, constructor called BTS
         NumberFormat percent = NumberFormat.getPercentInstance(); // percentage of a whole number (2 = 200%, 23.45 = 2345%)
         
-        
+        /*
         System.out.println (fmt.format(num1));
         System.out.println (fmt2.format(num1));
         
         System.out.println (money.format(num1));
         System.out.println (percent.format(num1));
+        */
 
         
         
@@ -76,6 +77,7 @@ public class chapter1Notes
         // "15" in 15s inputs amount of characters spaced
         // %#d amount of digits in column. can overflow
         
+        /*
         System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f \n", name, id, 4.22395);
         System.out.printf("Name:  %-15s \t ID: %7d \t GPA: %-7.3f\n", name2, id2, 3.8);
         
@@ -97,6 +99,52 @@ public class chapter1Notes
         // Calculate: milesTravelled = ending miles - beginning miles
         // Calculate: workFraction = workMiles / milesTravelled
         // Calculate: personalFraction = 1 - workFraction
+
+        /**/
+        //System.out.print("Enter a Number:");
+        System.out.print("Enter 3 Numbers:");
+        x = keyboard.nextInt();
+        y = keyboard.nextInt();
+        z = keyboard.nextInt();
+
+        System.out.print(x+y+z);
+        keyboard.nextLine(); // clears the input buffer
+        System.out.print(x);
+        System.out.print("Enter a Word:");
+        word = keyboard.nextLine(); // next reads up \n, to the white space
+        word2 = keyboard.next(); // reads to the space
+        System.out.print(word);
+        System.out.print(word2);
+        
+        /*
+        x = 9;
+        double conversion = 5/x; // int result = 0.55
+        final int BASE = 32; // final makes a constant
+        int cTemp = 30;
+        double fTemp = cTemp + conversion + BASE;
+        // double conversion = 5/x(double); is casting
+        // double conversion = 5.0/x is promotion 
+        
+        
+        System.out.print("Celsius Temp " + cTemp + BASE);
+        System.out.print("Fahrenheit EQuivalent " + fTemp);
+        */
+       
+       System.out.print(word.length()); // returns in the number of chararcters
+       System.out.print(word.toUpperCase());
+       System.out.print(word.indexOf("S")); // Finds position of letter, starts counting from 0, -1 means its not there
+       System.out.print(word.charAt(7));
+       
+       // one of the free responses will be string manipulation
+       // string manipulation happens all the time
+       
+       
+       
+       
+       // string is not a data type, its an array of functions like an object
+        
+       
+
         
     }
 }
