@@ -8,9 +8,7 @@
  */
 
 import java.util.Scanner;
-import java.util.Random;
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
 
 public class chapter1Notes
 {
@@ -118,7 +116,7 @@ public class chapter1Notes
         
         /*
         x = 9;
-        double conversion = 5/x; // int result = 0.55
+        double conversion = 5/x; // int result = 0, both integers so it truncates
         final int BASE = 32; // final makes a constant
         int cTemp = 30;
         double fTemp = cTemp + conversion + BASE;
@@ -126,25 +124,47 @@ public class chapter1Notes
         // double conversion = 5.0/x is promotion 
         
         
-        System.out.print("Celsius Temp " + cTemp + BASE);
+        System.out.print("Celsius Temp " + cTemp);
         System.out.print("Fahrenheit EQuivalent " + fTemp);
         */
        
+       // below are objects
+       /*
        System.out.print(word.length()); // returns in the number of chararcters
-       System.out.print(word.toUpperCase());
-       System.out.print(word.indexOf("S")); // Finds position of letter, starts counting from 0, -1 means its not there
-       System.out.print(word.charAt(7));
+       System.out.print(word.toUpperCase()); // change to all upper case
+       System.out.print(word.indexOf("E")); // Finds position of letter, starts counting from 0, -1 means its not there
+       System.out.print(word.charAt(1));
+       System.out.print(word.substring(7)); // whats substring?
+       System.out.print(name.substring(5,8));
        
        // one of the free responses will be string manipulation
        // string manipulation happens all the time
-       
-       
-       
-       
+    
        // string is not a data type, its an array of functions like an object
         
        
-
-        
+       */
+      
+       /**/
+       //!!!!! Makes a random object and numbers
+       Random generator = new Random();
+       
+       // number between 0 to n-1
+       x = generator.nextInt(100); // gives num from 0-99
+       System.out.print("Random #1" + x);
+       
+       // other way to generate a random number
+       // num between .000000000001 - 1 non-inclusive
+       num = generator.nextDouble();
+       System.out.print("Random #2 "+num);
+       // Change the range to 100 numbers in the range of 100-200. Can do this with other generator methods, but math one is more common
+       //   * multiply by how many numbers, + or - to push the range.
+       num = Math.random() *100 + 100;
+       System.out.print("Random #3 "+num);
+    
+       // in ap: indentation shows intention
+       
+       
+       
     }
 }
